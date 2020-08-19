@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i');
+body{
+	margin:0;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(9.jpg);
+	background-repeat: no-repeat fixed ; background-size:100% 100% ; background-attachment:fixed; 
+	}
+header{
+	background:black;
+	color:white;
+	paddings:15px 0px 6px 40px;
+	height:80px;
+	opacity:0.7;
+	}
+	
+	p{
+		color: white;
+		 text-align: center;
+			    font-size: x-large;
+			    font-weight: 600;
+			    font-style: italic;
+	}
+header h1{
+	display:inline;
+	color:white;
+	font-weight:400;
+	font-size:40px;
+	float:left;
+	margin-top:15px;
+	margin-right:15px;
+	margin-left: 15px;
+}
+h2{
+	color: white;
+}
+nav ul{
+	display:inline;
+	padding:0px;
+	float:left;
+	margin-left: 40px;
+	margin-top: 20px;
+	
+}
+nav ul li{
+	display:inline-block;
+	list-style-type:none;
+	color:white;
+	float:left;
+	margin-right:40px;
+	margin-top: 10px;
+}
+nav ul li a{
+	color:white;
+	font-size: 20;
+	text-decoration:none;
+}
+.homeblack:hover{
+	background-color:green;
+	padding:20px 20px 22px 20px;
+}
+
+.mySlides {display:none;}
+.container{
+width:50%;
+position:absolute;
+left:35%;
+top:20%;
+}
+
+</style>
+</head>
+<body background="8.jpg" background-repeat: no-repeat; background-size:100%; >
+<header>
+<nav>
+<a href="allrestaurants.html"><h1>BACK</h1></a>
+
+</nav>
+</header>
+<div class="container">
+  <h2>IMAGES</h2>
+  <p>Interior Images of DINE ESTY Restaurant</p>
+
+
+  <img class="Slides animate-top" src="dineestyi1.jpg" style="width:70+%">
+  <img class="Slides animate-bottom" src="dineestyi2.png"  style="width:70%">
+  <img class="Slides animate-top" src="dineestyi3.png"  style="width:70%">
+  <img class="Slides animate-bottom" src="dineestyi4.png"  style="width:70%">
+  <img class="Slides animate-bottom" src="dineestyi5.png"  style="width:70%">
+    <img class="Slides animate-bottom" src="dineestyi6.png"  style="width:70%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("Slides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+
+
+</body>
+</html>
